@@ -1,1 +1,20 @@
-/* Пиши стили тут */
+.rating {
+    font-size: 40px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.rating span {
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 3px black;
+    transition: color 0.3s;
+}
+
+.rating span:hover,
+.rating span:hover ~ span {
+    color: rgb(255, 242, 0);
+}
